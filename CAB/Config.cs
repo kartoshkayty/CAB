@@ -13,17 +13,18 @@ namespace CAB
 
         static Config()
         {
-            var host = "http://localhost:3000";
+            var host = "https://backend.minecis.net";
 
             var httpClient = new HttpClient
             {
                 BaseAddress = new Uri(host),
-                Timeout = TimeSpan.FromSeconds(10),
+                Timeout = TimeSpan.FromSeconds(25),
                 DefaultRequestHeaders = { { "User-Agent", "CABClient" } }
             };
             var socket = new SocketClient(host, new SocketIOOptions
             {
-                Reconnection = false
+                Reconnection = false,
+                ConnectionTimeout = TimeSpan.FromSeconds(25),
             });
 
             /*

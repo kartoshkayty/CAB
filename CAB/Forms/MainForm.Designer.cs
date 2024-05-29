@@ -43,7 +43,7 @@
             this.FindForYear = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.allVisitsBtn = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.FindForTime = new System.Windows.Forms.Button();
@@ -252,16 +252,16 @@
             this.label6.TabIndex = 3;
             this.label6.Text = "Количество посещений за год";
             // 
-            // button1
+            // allVisitsBtn
             // 
-            this.button1.Location = new System.Drawing.Point(9, 10);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 21);
-            this.button1.TabIndex = 12;
-            this.button1.TabStop = false;
-            this.button1.Text = "Все посещения";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.allVisitsBtn.Location = new System.Drawing.Point(9, 10);
+            this.allVisitsBtn.Name = "allVisitsBtn";
+            this.allVisitsBtn.Size = new System.Drawing.Size(97, 21);
+            this.allVisitsBtn.TabIndex = 12;
+            this.allVisitsBtn.TabStop = false;
+            this.allVisitsBtn.Text = "Все посещения";
+            this.allVisitsBtn.UseVisualStyleBackColor = true;
+            this.allVisitsBtn.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel5
             // 
@@ -437,7 +437,7 @@
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(62)))), ((int)(((byte)(69)))));
             this.panel9.Controls.Add(this.SaveVisitsFile);
-            this.panel9.Controls.Add(this.button1);
+            this.panel9.Controls.Add(this.allVisitsBtn);
             this.panel9.Location = new System.Drawing.Point(39, 226);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(214, 76);
@@ -538,7 +538,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button FindForYear;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button allVisitsBtn;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label7;
